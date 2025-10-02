@@ -1,0 +1,133 @@
+% wrangler
+
+# Initialize a new Wrangler project
+wrangler init <project-name>
+
+# Start local development server
+wrangler dev
+
+# Start development server with live reload
+wrangler dev --live-reload
+
+# Deploy to Cloudflare Workers
+wrangler deploy
+
+# Deploy to a specific environment
+wrangler deploy --env <environment>
+
+# View deployment logs
+wrangler tail
+
+# View logs for specific environment
+wrangler tail --env <environment>
+
+# List all deployments
+wrangler deployments list
+
+# View deployment details
+wrangler deployments view <deployment-id>
+
+# Create a new KV namespace
+wrangler kv:namespace create <namespace>
+
+# List KV namespaces
+wrangler kv:namespace list
+
+# Put a key-value pair in KV
+wrangler kv:key put <key> <value> --binding <binding-name>
+
+# Get a value from KV
+wrangler kv:key get <key> --binding <binding-name>
+
+# List all keys in KV namespace
+wrangler kv:key list --binding <binding-name>
+
+# Delete a key from KV
+wrangler kv:key delete <key> --binding <binding-name>
+
+# Create a new R2 bucket
+wrangler r2 bucket create <bucket-name>
+
+# List R2 buckets
+wrangler r2 bucket list
+
+# Upload file to R2 bucket
+wrangler r2 object put <bucket-name>/<object-key> --file <file-path>
+
+# Download file from R2 bucket
+wrangler r2 object get <bucket-name>/<object-key> --file <file-path>
+
+# List objects in R2 bucket
+wrangler r2 object list <bucket-name>
+
+# Delete object from R2 bucket
+wrangler r2 object delete <bucket-name>/<object-key>
+
+# Create a new D1 database
+wrangler d1 create <database-name>
+
+# List D1 databases
+wrangler d1 list
+
+# Execute SQL query on D1 database
+wrangler d1 execute <database-name> --command "<sql-query>"
+
+# Run SQL file on D1 database
+wrangler d1 execute <database-name> --file <sql-file>
+
+# Create D1 database migrations
+wrangler d1 migrations create <database-name> <migration-name>
+
+# Apply D1 migrations
+wrangler d1 migrations apply <database-name>
+
+# List D1 migrations
+wrangler d1 migrations list <database-name>
+
+# Create a new Queue
+wrangler queues create <queue-name>
+
+# List Queues
+wrangler queues list
+
+# Send message to Queue
+wrangler queues producer <queue-name> <message>
+
+# List custom domains
+wrangler custom-domains list
+
+# Add custom domain
+wrangler custom-domains create <domain>
+
+# Remove custom domain
+wrangler custom-domains delete <domain>
+
+# List environment variables
+wrangler secret list
+
+# Set environment variable/secret
+wrangler secret put <secret-name>
+
+# Delete environment variable/secret
+wrangler secret delete <secret-name>
+
+# Show account information
+wrangler whoami
+
+# Login to Cloudflare account
+wrangler login
+
+# Logout from Cloudflare account
+wrangler logout
+
+# Generate wrangler.toml config file
+wrangler init --from-dash
+
+# Validate wrangler.toml configuration
+wrangler config
+
+# Show Wrangler version
+wrangler --version
+
+# Get help for specific command
+wrangler <command> --help

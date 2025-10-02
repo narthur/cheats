@@ -1,0 +1,4 @@
+% llm, ai
+
+# Chat with Perplexity, if you have the Perplexity plugin installed
+llm chat -m sonar

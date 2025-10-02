@@ -1,0 +1,112 @@
+% gh, code
+
+# Log in to GitHub
+gh auth login
+
+# Check authentication status
+gh auth status
+
+# Log out of GitHub
+gh auth logout
+
+# Create a new repository
+gh repo create <repo-name>
+
+# Clone a repository
+gh repo clone <owner/repo>
+
+# Fork a repository
+gh repo fork <owner/repo>
+
+# View repository details
+gh repo view <owner/repo>
+
+# List repositories for a user/org
+gh repo list <owner>
+
+# Create a new pull request
+gh pr create --title "Title" --body "Description"
+
+# List pull requests
+gh pr list
+
+# View pull request details
+gh pr view <number>
+
+# Checkout a pull request locally
+gh pr checkout <number>
+
+# Merge a pull request
+gh pr merge <number>
+
+# Close a pull request
+gh pr close <number>
+
+# Approve a pull request
+gh pr review <number> --approve
+
+# Request changes on a pull request
+gh pr review <number> --request-changes --body "Comment"
+
+# Show pull request diff
+gh pr diff <number>
+
+# Create a new issue
+gh issue create --title "Title" --body "Description"
+
+# List issues
+gh issue list
+
+# View issue details
+gh issue view <number>
+
+# Close an issue
+gh issue close <number>
+
+# Add comment to an issue
+gh issue comment <number> --body "Comment"
+
+# Create a new release
+gh release create <tag> --title "Release Title" --notes "Release notes"
+
+# List releases
+gh release list
+
+# View release details
+gh release view <tag>
+
+# Download release assets
+gh release download <tag>
+
+# List GitHub Actions workflows
+gh workflow list
+
+# Trigger a workflow run
+gh workflow run <workflow-name>
+
+# List workflow runs
+gh run list
+
+# View workflow run details
+gh run view <run-id>
+
+# Watch a workflow run in real-time
+gh run watch <run-id>
+
+# Create a gist from file
+gh gist create <file>
+
+# List your gists
+gh gist list
+
+# View a gist
+gh gist view <gist-id>
+
+# Edit a gist
+gh gist edit <gist-id>
+
+# Open repository in browser
+gh browse
+
+# Open specific repository in browser
+gh browse --repo <owner/repo>
