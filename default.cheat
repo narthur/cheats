@@ -1,0 +1,4 @@
+% render
+
+# List service deploys, interactively
+render deploy list
