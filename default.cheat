@@ -2,3 +2,8 @@
 
 # List service deploys, interactively
 render deploy list
+
+% ddgr, duckduckgo, search
+
+# Search DuckDuckGo from the terminal
+ddgr <search terms>
