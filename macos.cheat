@@ -1,4 +1,4 @@
 % MacOS
 
 # Remove the quarantine attribute Mac adds to downloaded executables to bypass unidentified developer warning
-xattr -d com.apple.quarantine ./path/to/executable
+xattr -d com.apple.quarantine <PATH_TO_EXECUTABLE>
