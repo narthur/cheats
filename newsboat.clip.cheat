@@ -1,0 +1,24 @@
+% newsboat, clipping, obsidian, web-clipping
+
+# Clip article to Obsidian from newsboat
+# Press 'c' in article list or article view
+# Requires macro in ~/.newsboat/config: macro c pipe-to "~/bin/clip-to-obsidian %u \"%t\""
+
+# Manually clip any URL to Obsidian
+~/bin/clip-to-obsidian <url> <title>
+
+# Example: manually clip an article
+~/bin/clip-to-obsidian "https://example.com/article" "Interesting Article Title"
+
+# Install dependencies for clip-to-obsidian (if missing)
+sudo apt install html2text curl
+# Alternative converters (in order of preference): html2text, w3m, lynx
+
+# Configure newsboat for clipping
+echo 'macro c pipe-to "~/bin/clip-to-obsidian %u \"%t\""' >> ~/.newsboat/config
+
+# Alternative: use built-in bookmark command (Ctrl+B)
+echo 'bookmark-cmd "~/bin/clip-to-obsidian %u \"%t\""' >> ~/.newsboat/config
+
+# View clippings directory
+ls -la "/home/narthur/Obsidian Vaults/Main/Clippings"

@@ -1,0 +1,19 @@
+% buzz, demo, asciinema, recording
+
+# Create a new buzz CLI demo recording (from buzz repo)
+z buzz && ./scripts/demo-cli.sh
+
+# Play the latest buzz demo recording
+z buzz && asciinema play demos/demo-buzz-cli-*.cast
+
+# Upload demo recording to asciinema.org
+asciinema upload <recording-file>
+
+# Convert recording to GIF (requires agg)
+agg <recording-file> <output-file.gif>
+
+# List all demo recordings in repo
+z buzz && ls -la demos/
+
+# Build buzz binary in repo
+z buzz && go build -o buzz

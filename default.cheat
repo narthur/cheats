@@ -7,3 +7,8 @@ render deploy list
 
 # Search DuckDuckGo from the terminal
 ddgr <search terms>
+
+% fd, find, search, filesystem
+
+# Fast and user-friendly alternative to 'find'
+fd <pattern> <path>

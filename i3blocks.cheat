@@ -1,0 +1,25 @@
+% i3blocks, taskwarrior, i3wm
+
+# Reload i3blocks configuration
+pkill -SIGUSR1 i3blocks
+
+# Test taskwarrior i3blocks script manually
+~/.scripts/i3blocks_taskwarrior.sh
+
+# Edit i3blocks configuration
+zed ~/.config/i3blocks/config
+
+# Edit taskwarrior i3blocks script
+zed ~/.scripts/i3blocks_taskwarrior.sh
+
+# Show taskwarrior next task (what appears in i3blocks)
+task next limit:1
+
+# Add a new task to taskwarrior
+task add <description>
+
+# Complete a task in taskwarrior
+task <id> done
+
+# Check i3blocks log for errors
+journalctl --user -u i3blocks -f
